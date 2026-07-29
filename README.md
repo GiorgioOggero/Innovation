@@ -1,24 +1,19 @@
-# Giorgio Oggero — Bilingual GitHub Pages Website
+# Giorgio Oggero website — bilingual version
 
-Static professional website, ready for GitHub Pages.
+Sito statico pronto per GitHub Pages.
 
-## Pages
-- `index.html` — Portfolio / homepage
-- `experiences.html` — Experiences
-- `contents.html` — Contents and LinkedIn assets
-- `contacts.html` — Contacts, CV, LinkedIn
-- `privacy.html` — Privacy page
-- `404.html` — GitHub Pages error page
+## Pagine
+- `index.html` — Portfolio in italiano
+- `esperienze.html` — Esperienze in italiano
+- `contenuti.html` — Contenuti in italiano
+- `en/index.html` — English portfolio
+- `en/experience.html` — English experience
+- `en/programs.html` — English programs
 
-## How to publish on GitHub Pages
-1. Create a new GitHub repository.
-2. Upload the **contents of this folder** to the repository root.
-3. Go to **Settings → Pages**.
-4. Select **Deploy from branch**.
-5. Choose `main` and `/root`.
-6. Save and wait for the GitHub Pages URL.
+## Asset principali
+- `assets/giorgio-oggero-hero.jpeg` — immagine grande in homepage
+- `assets/content-images/` — immagini dei contenuti/programmi
+- `assets/cv/` — CV in italiano e inglese, PDF e Word
 
-## Notes
-- The site is bilingual IT/EN with a language switch in the header.
-- It is static: no backend and no form data collection.
-- Contact links open the visitor's email client.
+## Upload su GitHub
+Carica nella root della repository tutti i file e le cartelle contenuti in questa cartella, non la cartella esterna e non lo ZIP.
