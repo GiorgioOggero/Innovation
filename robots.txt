@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://missilvx.github.io/Giorgio_Oggero/sitemap.xml
