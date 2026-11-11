@@ -14,3 +14,30 @@
   .site-header .nav-links.open { display:flex; }
   .site-header .nav-links a { display:block; }
 }
+
+/* The new book is marked as a small, unobtrusive gold launch badge. */
+.site-header .nav-links a.book-menu-link { position:relative; }
+.site-header .book-new-badge {
+ position:absolute;top:-10px;right:-5px;
+ display:inline-flex;align-items:center;justify-content:center;
+ min-height:17px;padding:2px 5px;border-radius:999px;
+ background:#e4bf73;color:#051a31;
+ border:1px solid rgba(5,26,49,.18);
+ font-size:9px;line-height:1;letter-spacing:.02em;font-weight:900;
+ box-shadow:0 2px 8px rgba(0,0,0,.16);
+ pointer-events:none;white-space:nowrap;
+}
+@media (max-width: 1100px) {
+ .site-header .nav-links a.book-menu-link { display:flex;align-items:center;gap:9px;justify-content:flex-start; }
+ .site-header .book-new-badge { position:static;box-shadow:none; }
+}
+/* Prevent long translated program descriptions from widening the page on smaller desktops. */
+@media (min-width: 1101px) and (max-width: 1350px) {
+ .program { grid-template-columns: 1fr; }
+}
+/* Keep the mobile header readable beside the six-language switcher. */
+@media (max-width: 420px) {
+ .site-header .brand small { display:none; }
+ .site-header .brand { font-size:.83rem; line-height:1.2; gap:7px; }
+ .site-header .brand-mark { width:36px;height:36px;flex:0 0 36px; }
+}

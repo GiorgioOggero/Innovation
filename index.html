@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Giorgio Oggero | International Negotiation & GCC Market Entry</title><meta name="description" content="Corporate training and advisory in international negotiation, export and GCC/UAE market entry."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/styles.css?v=20261111-3"><link rel="stylesheet" href="assets/css/book-nav-fix.css"><style id="fix-lingue-visibili">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Giorgio Oggero | International Negotiation & GCC Market Entry</title><meta name="description" content="Corporate training and advisory in international negotiation, export and GCC/UAE market entry."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/styles.css?v=20261111-4"><link rel="stylesheet" href="assets/css/book-nav-fix.css?v=20261111-4"><style id="fix-lingue-visibili">
 /* Fallback: mostra solo la lingua selezionata anche se il CSS principale è nella cache. */
 body:not(.lang-en) .en,
 body:not(.lang-it) .it,
@@ -14,7 +14,7 @@ body:not(.lang-zh) .zh { display: none !important; }
       <a href="index.html"><span class="en">Portfolio</span><span class="it">Portfolio</span><span class="ar">الأعمال</span><span class="de">Portfolio</span><span class="es">Portafolio</span><span class="zh">作品集</span></a>
       <a href="experiences.html"><span class="en">Experiences</span><span class="it">Esperienze</span><span class="ar">الخبرات</span><span class="de">Erfahrung</span><span class="es">Experiencias</span><span class="zh">经验</span></a>
       <a href="contents.html"><span class="en">Contents</span><span class="it">Contenuti</span><span class="ar">المحتوى</span><span class="de">Inhalte</span><span class="es">Contenidos</span><span class="zh">内容</span></a>
-      <a href="book.html"><span class="en">Book</span><span class="it">Libro</span><span class="ar">الكتاب</span><span class="de">Buch</span><span class="es">Libro</span><span class="zh">图书</span></a>
+      <a href="book.html" class="book-menu-link"><span class="en">Book</span><span class="it">Libro</span><span class="ar">الكتاب</span><span class="de">Buch</span><span class="es">Libro</span><span class="zh">图书</span><span class="book-new-badge"><span class="en">NEW</span><span class="it">NOVITÀ</span><span class="ar">جديد</span><span class="de">NEU</span><span class="es">NUEVO</span><span class="zh">新</span></span></a>
       <a href="contacts.html"><span class="en">Contacts</span><span class="it">Contatti</span><span class="ar">التواصل</span><span class="de">Kontakt</span><span class="es">Contacto</span><span class="zh">联系方式</span></a>
     </nav>
     <div class="language"><button data-lang="en">EN</button><button data-lang="it">IT</button><button data-lang="ar">AR</button><button data-lang="de">DE</button><button data-lang="es">ES</button><button data-lang="zh">中文</button></div>
@@ -33,4 +33,27 @@ body:not(.lang-zh) .zh { display: none !important; }
     <div><b>Contact</b><p><a href="mailto:g.oggero@containergroup.eu">g.oggero@containergroup.eu</a><br><a href="https://www.linkedin.com/in/giorgio-oggero-759992ba/">LinkedIn</a><br><a href="privacy.html">Privacy</a></p></div>
   </div>
   <div class="wrap small" style="border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:20px">© 2026 Giorgio Oggero. All rights reserved.</div>
-</footer><script src="assets/js/script.js"></script></body></html>
+</footer><script src="assets/js/script.js?v=20261111-4"></script>
+<script id="language-selector-fallback">
+/* Safety net for the six-language selector if script.js is cached or fails. */
+(function () {
+  var languages = ['en', 'it', 'ar', 'de', 'es', 'zh'];
+  var root = document.documentElement;
+  var body = document.body;
+  if (!body) return;
+  function applyLanguage(lang) {
+    if (languages.indexOf(lang) < 0) lang = 'en';
+    languages.forEach(function (code) { body.classList.toggle('lang-' + code, code === lang); });
+    body.classList.toggle('rtl', lang === 'ar');
+    root.lang = lang;
+    root.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    try { localStorage.setItem('site-lang', lang); } catch (e) {}
+  }
+  var saved = 'en';
+  try { saved = localStorage.getItem('site-lang') || 'en'; } catch (e) {}
+  applyLanguage(saved);
+  document.querySelectorAll('.language [data-lang]').forEach(function (button) {
+    button.addEventListener('click', function () { applyLanguage(button.getAttribute('data-lang')); });
+  });
+})();
+</script></body></html>

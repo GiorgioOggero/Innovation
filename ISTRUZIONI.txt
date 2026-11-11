@@ -1,19 +1,20 @@
-CORREZIONE MIRATA: LINGUE SOVRAPPOSTE - GIORGIO OGGERO
+CORREZIONE SITO MULTILINGUE DI GIORGIO O G G E R O
 
-Destinazione: repository GiorgioOggero/Innovation, branch sito_multilingue_con_Book.
-Non toccare Sito_multilingue (il branch originale).
+DESTINAZIONE: branch sito_multilingue_con_Book (non Sito_multilingue)
 
-CONTENUTO: soltanto 7 file HTML, senza immagini, CSS esterno o JavaScript.
-Sostituisci i 7 file omonimi nella RADICE del branch, NON creare sottocartelle.
+Questo archivio contiene i file necessari per:
+- mostrare una sola lingua alla volta, con selettore EN / IT / AR / DE / ES / 中文;
+- mantenere tutte le traduzioni presenti nel sito originale;
+- evidenziare la novità con un badge dorato NEW/NOVITÀ/جديد/NEU/NUEVO/新 vicino al menu Book;
+- aggiungere la pagina book.html e la sua immagine originale.
 
-Modifica: aggiunge all'interno del <head> le regole che nascondono i testi delle
-cinque lingue non selezionate; aggiunge inoltre un parametro alla URL del CSS
-esistente per aggiornare la cache. La grafica e le traduzioni non sono cambiate.
+PROCEDURA
+1. Estrai lo ZIP sul computer.
+2. Apri GitHub, seleziona il branch sito_multilingue_con_Book.
+3. Carica i file estratti nelle medesime posizioni: tutti gli HTML nella radice, le immagini in assets/img, il CSS in assets/css e lo script in assets/js.
+4. NON creare una cartella supplementare che contenga tutti i file. NON caricare direttamente lo ZIP nel repository.
+5. Conferma con Commit changes e attendi il deploy di GitHub Pages.
+6. Verifica il sito in finestra privata e prova ciascuno dei 6 selettori su pagina iniziale e book.html.
 
-NON caricare il file ZIP direttamente su GitHub: estrai prima i 7 HTML.
-In GitHub: seleziona branch sito_multilingue_con_Book -> Add file -> Upload files
--> trascina i sette .html -> Commit changes.
-
-DOPO: visualizza sito in incognito o fai un refresh forzato.
-Se la homepage e' ancora incoerente, riporta temporaneamente GitHub Pages al
-branch Sito_multilingue e fai un confronto con i file correnti.
+Attenzione: l'archivio non esegue da solo la pubblicazione su GitHub.
+Il sito originale sul branch Sito_multilingue non viene toccato.
