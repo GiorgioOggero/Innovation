@@ -1,0 +1,16 @@
+/* Only prevent the new Book menu item from crowding the existing 6-language header.
+   Original site styles.css is not altered. This file is safe on every page. */
+@media (min-width: 901px) and (max-width: 1100px) {
+  /* Avoid the existing program cards extending beyond the viewport on tablets. */
+  .program { grid-template-columns:1fr; }
+  .site-header .hamb { display:block; }
+  .site-header .nav-links {
+    position:absolute;left:4vw;right:4vw;top:78px;display:none;
+    flex-direction:column;align-items:stretch;
+    background:rgba(5,26,49,.98);padding:16px;border-radius:22px;
+    border:1px solid rgba(255,255,255,.1);
+    box-shadow:0 16px 40px rgba(0,0,0,.2);
+  }
+  .site-header .nav-links.open { display:flex; }
+  .site-header .nav-links a { display:block; }
+}
