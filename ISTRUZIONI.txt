@@ -1,0 +1,19 @@
+CORREZIONE MIRATA: LINGUE SOVRAPPOSTE - GIORGIO OGGERO
+
+Destinazione: repository GiorgioOggero/Innovation, branch sito_multilingue_con_Book.
+Non toccare Sito_multilingue (il branch originale).
+
+CONTENUTO: soltanto 7 file HTML, senza immagini, CSS esterno o JavaScript.
+Sostituisci i 7 file omonimi nella RADICE del branch, NON creare sottocartelle.
+
+Modifica: aggiunge all'interno del <head> le regole che nascondono i testi delle
+cinque lingue non selezionate; aggiunge inoltre un parametro alla URL del CSS
+esistente per aggiornare la cache. La grafica e le traduzioni non sono cambiate.
+
+NON caricare il file ZIP direttamente su GitHub: estrai prima i 7 HTML.
+In GitHub: seleziona branch sito_multilingue_con_Book -> Add file -> Upload files
+-> trascina i sette .html -> Commit changes.
+
+DOPO: visualizza sito in incognito o fai un refresh forzato.
+Se la homepage e' ancora incoerente, riporta temporaneamente GitHub Pages al
+branch Sito_multilingue e fai un confronto con i file correnti.
