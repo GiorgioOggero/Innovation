@@ -1,0 +1,32 @@
+CORREZIONE PER IL BRANCH Sito_multilingue — 11/11/2026
+
+PROBLEMA CONFERMATO NEI FILE:
+Dopo l'aggiunta di «Book», il menu orizzontale era troppo affollato intorno ai 1000 px.
+Inoltre lo ZIP completo precedente aveva una cartella principale: se caricata in blocco
+nel posto sbagliato, i percorsi dei CSS e delle immagini possono essere errati.
+
+COME USARE IL PACCHETTO PICCOLO
+1. Estrarre il file ZIP sul computer. NON caricare il file .zip come file su GitHub.
+2. Nel repository GiorgioOggero/Innovation selezionare il branch che pubblica GitHub Pages.
+3. Sostituire i file HTML e sitemap.xml direttamente nella RADICE del branch,
+   cioè affianco all'index.html già presente. Evitare cartelle extra.
+4. Inserire i CSS nella cartella assets/css/ e l'immagine in assets/img/.
+5. Verificare dalla pagina GitHub che esistano:
+   /index.html, /book.html, /assets/css/styles.css,
+   /assets/css/book.css, /assets/css/book-nav-fix.css,
+   /assets/img/the-charm-of-doubt-promo.png, /assets/js/script.js.
+6. Controllare Settings > Pages: il branch pubblicato deve coincidere con quello aggiornato.
+7. Testare home e book.html dopo il caricamento, anche a 100% zoom e da mobile.
+
+Non sovrascrivere o eliminare assets/css/styles.css né assets/js/script.js:
+questi file rimangono IDENTICI all'originale.
+
+Se la pagina appare senza grafica, per prima cosa aprire direttamente:
+https://giorgiooggero.github.io/Innovation/assets/css/styles.css
+Deve comparire il contenuto CSS (non 404).
+
+PER RIPRISTINARE subito l'originale:
+caricare i file di RIPRISTINO_ORIGINALE (dall'archivio apposito)
+nella radice del branch pubblicato. Poi eventualmente eliminare book.html
+e i due nuovi CSS e l'immagine promozionale (non necessario per ripristinare
+la home e le pagine originarie).

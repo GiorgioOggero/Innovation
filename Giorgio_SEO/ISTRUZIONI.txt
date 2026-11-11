@@ -1,0 +1,20 @@
+CORREZIONE SITO MULTILINGUE DI GIORGIO O G G E R O
+
+DESTINAZIONE: branch sito_multilingue_con_Book (non Sito_multilingue)
+
+Questo archivio contiene i file necessari per:
+- mostrare una sola lingua alla volta, con selettore EN / IT / AR / DE / ES / 中文;
+- mantenere tutte le traduzioni presenti nel sito originale;
+- evidenziare la novità con un badge dorato NEW/NOVITÀ/جديد/NEU/NUEVO/新 vicino al menu Book;
+- aggiungere la pagina book.html e la sua immagine originale.
+
+PROCEDURA
+1. Estrai lo ZIP sul computer.
+2. Apri GitHub, seleziona il branch sito_multilingue_con_Book.
+3. Carica i file estratti nelle medesime posizioni: tutti gli HTML nella radice, le immagini in assets/img, il CSS in assets/css e lo script in assets/js.
+4. NON creare una cartella supplementare che contenga tutti i file. NON caricare direttamente lo ZIP nel repository.
+5. Conferma con Commit changes e attendi il deploy di GitHub Pages.
+6. Verifica il sito in finestra privata e prova ciascuno dei 6 selettori su pagina iniziale e book.html.
+
+Attenzione: l'archivio non esegue da solo la pubblicazione su GitHub.
+Il sito originale sul branch Sito_multilingue non viene toccato.
